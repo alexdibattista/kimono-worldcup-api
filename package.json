@@ -2,26 +2,17 @@
   "name": "kimono-worldcup-api-wrapper",
   "description": "World Cup API Wrapper",
   "version": "0.1.0",
-  "homepage": "https://github.com/alexdibattista/kimono-worldcup-api-wrapper",
-  "main": "lib/kimono-worldcup-api-wrapper",
-  "author": {
-    "name": "Alex Di Battista",
-    "email": "alex.dibattista@gmail.com"
-  },
+  "homepage": "https://github.com/alexdibattista/kimono-worldcup-api",
+  "main": "lib/kimono-worldcup-api.js",
+  "author": "Alex Di Battista <alex.dibattista@gmail.com>",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexdibattista/kimono-worldcup-api-wrapper.git"
+    "url": "git://github.com/alexdibattista/kimono-worldcup-api.git"
   },
   "bugs": {
-    "url": "https://github.com/alexdibattista/kimono-worldcup-api-wrapper/issues"
+    "url": "https://github.com/alexdibattista/kimono-worldcup-api/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/alexdibattista/kimono-worldcup-api-wrapper/blob/master/LICENSE-MIT"
-    }
-  ],
   "engines": {
     "node": "~0.10.28"
   },
@@ -35,5 +26,6 @@
     "querystring": "^0.2.0",
     "request": "^2.36.0"
   },
-  "keywords": []
+  "keywords": [],
+  "license": "ISC"
 }
