@@ -18,12 +18,13 @@
   "scripts": {
     "test": "grunt"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.4",
+  "dependencies": {
     "q": "^1.0.1",
     "querystring": "^0.2.0",
     "request": "^2.36.0"
+    },
+  "devDependencies": {
+    "grunt": "~0.4.4"
   },
   "keywords": [],
   "license": "ISC"
