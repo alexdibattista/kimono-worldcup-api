@@ -1,7 +1,7 @@
 {
   "name": "kimono-worldcup-api-wrapper",
   "description": "World Cup API Wrapper",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/alexdibattista/kimono-worldcup-api",
   "main": "lib/kimono-worldcup-api",
   "author": "Alex Di Battista <alex.dibattista@gmail.com>",
