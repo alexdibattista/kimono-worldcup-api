@@ -2,7 +2,6 @@
 
 npm API wrapper for [Kimono World Cup API ](http://www.kimonolabs.com/worldcup/explorer)
 
-
 ##Usage
 
 ```node
@@ -20,9 +19,9 @@ worldCupApi.get.players().done(function(res){
 
 ###Players
 
-	get.Players(filters)
+	worldCupApi.get.Players(filters)
 		- Takes Optional filters (ie '{ sort : position }')
-	
+	- Returns a promise with the API response
 
 ```node
 worldCupApi.get.players().done(function(res){
@@ -30,9 +29,10 @@ worldCupApi.get.players().done(function(res){
 });
 ```
 ###Player
-	get.Player(id, filters)
+	worldCupApi.get.Player(id, filters)
 		- Required player ID
 		- Takes Optional filters (ie '{ sort : position }')
+	- Returns a promise with the API response 
 ```node
 worldCupApi.get.player('** players ID**').done(function(res){
 	console.log(res);
@@ -40,18 +40,19 @@ worldCupApi.get.player('** players ID**').done(function(res){
 ```
 
 ###Teams
-	get.Teams(filters)
+	worldCupApi.get.Teams(filters)
 		- Takes Optional filters (ie '{ sort : position }')
-	
+	- Returns a promise with the API response
 ```node
 worldCupApi.get.players().done(function(res){
 	console.log(res);
 });
 ```
 ###Team
-get.Team(id, filters)
+	worldCupApi.get.Team(id, filters)
 		- Required Team ID
 		- Takes Optional filters (ie '{ sort : position }')
+	- Returns a promise with the API response
 ```node
 worldCupApi.get.Teams().done(function(res){
 	console.log(res);
@@ -59,15 +60,16 @@ worldCupApi.get.Teams().done(function(res){
 ```
 
 ###Matches
-	get.Matches(filters)
+	worldCupApi.get.Matches(filters)
 		- Takes Optional filters (ie '{ sort : position }')
+	- Returns a promise with the API response
 	
 ###Match
-	get.Match(id, filters)
+	worldCupApi.get.Match(id, filters)
 		- Required Match ID
 		- Takes Optional filters (ie '{ sort : position }')
+	- Returns a promise with the API response
 	
-
 ##Filters
 
 
