@@ -13,7 +13,7 @@ var worldCupApi = worldCup('*** Kimono API Key***');
 worldCupApi.get.players().done(function(res){
 	console.log(res);
 });
-javascript```
+```
 
 
 
