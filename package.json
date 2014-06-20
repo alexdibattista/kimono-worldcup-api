@@ -5,7 +5,6 @@
   "homepage": "https://github.com/alexdibattista/kimono-worldcup-api",
   "main": "lib/kimono-worldcup-api",
   "author": "Alex Di Battista <alex.dibattista@gmail.com>",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/alexdibattista/kimono-worldcup-api.git"
