@@ -3,7 +3,7 @@
   "description": "World Cup API Wrapper",
   "version": "0.1.0",
   "homepage": "https://github.com/alexdibattista/kimono-worldcup-api",
-  "main": "lib/kimono-worldcup-api.js",
+  "main": "lib/kimono-worldcup-api",
   "author": "Alex Di Battista <alex.dibattista@gmail.com>",
   "private": true,
   "repository": {
