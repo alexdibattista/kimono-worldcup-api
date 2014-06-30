@@ -1,10 +1,18 @@
-#kimono-worldcup-api-wrapper
+# kimono-worldcup-api-wrapper #
 
-npm API wrapper for [Kimono World Cup API ](http://www.kimonolabs.com/worldcup/explorer)
+npm API wrapper for [Kimono World Cup API](http://www.kimonolabs.com/worldcup/explorer)
 
-##Usage
+## Install ##
+	npm install kimono-worldcup-api-wrapper
 
-```node
+## Dependencies ##
+	- [q]: https://github.com/kriskowal/q-connection
+	- [querystring]: https://github.com/Gozala/querystring
+	- [request]: http://github.com/mikeal/request
+
+## Usage ##
+
+```javascript
 //Include the package
 var worldCup = require('kimono-worldcup-api-wrapper');
 
@@ -15,62 +23,69 @@ worldCupApi.get.players().done(function(res){
 	console.log(res);
 });
 ```
-##Endpoints
+## Endpoints ##
 
-###Players
+### Players ###
 
-	worldCupApi.get.Players(filters)
+	worldCupApi.get.Players(filters(optional))
 		- Takes Optional filters (ie '{ sort : position }')
 	- Returns a promise with the API response
 
-```node
+```javascript
 worldCupApi.get.players().done(function(res){
 	console.log(res);
 });
 ```
-###Player
-	worldCupApi.get.Player(id, filters)
+### Player ###
+	worldCupApi.get.Player(id, filters(optional))
 		- Required player ID
 		- Takes Optional filters (ie '{ sort : position }')
 	- Returns a promise with the API response 
-```node
+```javascript
 worldCupApi.get.player('** players ID**').done(function(res){
 	console.log(res);
 });
 ```
 
-###Teams
-	worldCupApi.get.Teams(filters)
+### Teams ###
+	worldCupApi.get.Teams(filters(optional))
 		- Takes Optional filters (ie '{ sort : position }')
 	- Returns a promise with the API response
-```node
+```javascript
 worldCupApi.get.players().done(function(res){
 	console.log(res);
 });
 ```
-###Team
-	worldCupApi.get.Team(id, filters)
+### Team ###
+	worldCupApi.get.Team(id, filters(optional))
 		- Required Team ID
 		- Takes Optional filters (ie '{ sort : position }')
 	- Returns a promise with the API response
-```node
+
+```javascript
 worldCupApi.get.Teams().done(function(res){
 	console.log(res);
 });
 ```
 
-###Matches
-	worldCupApi.get.Matches(filters)
+### Matches ###
+	worldCupApi.get.Matches(filters(optional))
 		- Takes Optional filters (ie '{ sort : position }')
 	- Returns a promise with the API response
 	
-###Match
-	worldCupApi.get.Match(id, filters)
+### Match ###
+	worldCupApi.get.Match(id, filters(optional))
 		- Required Match ID
 		- Takes Optional filters (ie '{ sort : position }')
 	- Returns a promise with the API response
+
+### PlayerSeasonStats ###
+	worldCupApi.get.player_season_stats(id(optional), filters(optional))
+		- Optional Player ID
+		- Takes Optional filters (ie '{ sort : position }')
+	- Returns a promise with the API response
 	
-##Filters
+### Filters ###
 
 
 
